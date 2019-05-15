@@ -43,6 +43,10 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka/
+    #并不自己注册,防止自己注册自己,因为它本身就是服务
+    register-with-eureka: false
+    #这里不需要抓取注册表
+    fetch-registry: false      
   healthcheck:
     enabled: true
 banner:
