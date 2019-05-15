@@ -1,0 +1,21 @@
+server:
+  port: 9001
+  tomcat:
+    uri-encoding: UTF-8
+spring:
+  profiles: test
+  thymeleaf.cache: false
+  aop:
+    auto: true
+  session:
+    store-type: redis
+  redis:
+    database: 2 # database name
+  application:
+    name: product-api
+
+ribbon:
+  ReadTimeout: 60000
+  ConnectTimeout: 60000
+  MaxAutoRetries: 0
+  MaxAutoRetriesNextServer: 1
