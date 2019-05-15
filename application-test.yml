@@ -1,0 +1,54 @@
+spring:
+  profiles: test
+  thymeleaf.cache: false
+  aop:
+    auto: true
+    proxy-target-class: true
+  messages:
+    cache-seconds: 3600
+    encoding: UTF-8
+    basename: i18n/messages
+  http:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+  redis:
+    database: 1
+    host: localhost
+    max-active: 8
+    max-idle: 8
+    max-wait: -1
+    min-idle: 0
+    password: 
+    prot: 6379
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000
+    fallback:
+      isolation:
+        semaphore:
+          maxConcurrentRequests: 100
+  threadpool:
+    default: 
+      coreSize: 100 #zuul的线程核心数量 
+      maxQueueSize: 200 #zuul的线程最大数量
+      queueSizeRejectionThreshold: 200 #zuul的请求超过核心线程数的阻塞数量 超过核心线程数则把其余的请求进行阻塞等待 
+      keepAliveTimeMinutes: 1
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  healthcheck:
+    enabled: true
+banner:
+  charset: UTF-8
+management:
+  security:
+    enabled: false
+ribbon: 
+  warmup: true
