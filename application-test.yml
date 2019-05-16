@@ -42,7 +42,7 @@ hystrix:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:/eureka/
+      defaultZone: http://localhost:7000/eureka/
   healthcheck:
     enabled: true
       
