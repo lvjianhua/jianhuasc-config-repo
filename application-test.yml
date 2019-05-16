@@ -43,11 +43,7 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:7000/eureka/
-    fetch-registry: false
-    register-with-eureka: false
-  healthcheck:
-    enabled: true
-    
+      
 banner:
   charset: UTF-8
 
