@@ -16,10 +16,8 @@ ribbon:
 zuul: 
   routes: 
     product-api:
-      sensitiveHeaders:                               
       path: /api/ps/**
-      stripPrefix: false
-  add-proxy-headers: true
+      serviceId: product-api
   host:
     socket-timeout-millis: 12000
     connect-timeout-millis: 12000
