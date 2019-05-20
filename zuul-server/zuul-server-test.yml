@@ -7,8 +7,8 @@ spring:
 server:
   port: 9000
 ribbon:
-  ReadTimeout: 15000
-  ConnectTimeout: 15000
+  ReadTimeout: 60000
+  ConnectTimeout: 60000
   MaxAutoRetries: 0
   MaxAutoRetriesNextServer: 1
 zuul: 
