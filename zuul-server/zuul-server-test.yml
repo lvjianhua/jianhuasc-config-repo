@@ -11,6 +11,8 @@ ribbon:
   ConnectTimeout: 60000
   MaxAutoRetries: 0
   MaxAutoRetriesNextServer: 1
+  eureka:
+    enabled: true
 zuul: 
   routes: 
     product-api:
@@ -18,6 +20,9 @@ zuul:
       path: /api/ps/**
       stripPrefix: false
   add-proxy-headers: true
+  host:
+    socket-timeout-millis: 12000
+    connect-timeout-millis: 12000
 security:
   basic:
     enabled: false
