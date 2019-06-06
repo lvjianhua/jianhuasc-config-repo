@@ -30,7 +30,7 @@ ribbon:
   
 zuul: 
   routes: 
-    ps-api:       
+    product-api:       
       sensitiveHeaders:                               
       path: /api/ps/**
       stripPrefix: false  
