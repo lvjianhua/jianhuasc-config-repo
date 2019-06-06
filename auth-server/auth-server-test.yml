@@ -23,7 +23,7 @@ server:
   use-forward-headers: true
   session: 
     cookie: 
-      name: gfresh-au
+      name: jianhuasc-au
   
 security:
   basic:
