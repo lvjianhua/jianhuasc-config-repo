@@ -76,5 +76,5 @@ server:
     maxThreads: 100
   session:
     cookie: 
-      name: gfresh-session          
+      name: jianhuasc-session          
     
