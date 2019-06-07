@@ -79,6 +79,27 @@ hystrix:
         rollingPercentile:
           numBuckets: 10      
             
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          strategy: THREAD
+          thread:
+            timeoutInMilliseconds: 100000
+    product-service:
+      execution:
+        isolation:
+          strategy: THREAD
+          thread:
+            timeoutInMilliseconds: 100000
+    auth-server:
+      execution:
+        isolation:
+          strategy: THREAD
+          thread:
+            timeoutInMilliseconds: 1000000
+            
 zuulprop: 
   loginAccessUrl: 
   allowOrigin: localhost
