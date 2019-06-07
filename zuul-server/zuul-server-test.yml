@@ -14,10 +14,10 @@ spring:
 eureka:
   instance: 
     preferIpAddress: true
-    nonSecurePort: 9000
+    nonSecurePort: 8888
 # Define the port where the API gateway server would be running
 server:
-  port: 9000
+  port: 8888
   session: 
     cookie: 
       name: jianhuasc-az
@@ -60,10 +60,6 @@ security:
           -----END PUBLIC KEY-----
       id: openid
       serviceId: ${PREFIX:}resource
-      
-product-service:
-  ribbon:
-    listOfServers: http://localhost:9002
 logging:
   level.org.springframework.security: DEBUG
 turbine:
