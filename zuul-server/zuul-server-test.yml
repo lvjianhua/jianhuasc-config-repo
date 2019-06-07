@@ -20,7 +20,7 @@ server:
   port: 9000
   session: 
     cookie: 
-      name: gfresh-az
+      name: jianhuasc-az
       
 ribbon:
   ReadTimeout: 15000
