@@ -60,7 +60,10 @@ security:
           -----END PUBLIC KEY-----
       id: openid
       serviceId: ${PREFIX:}resource
-
+      
+product-service:
+  ribbon:
+    listOfServers: http://localhost:9002
 logging:
   level.org.springframework.security: DEBUG
 turbine:
