@@ -28,7 +28,7 @@ hystrix:
       execution:
         isolation:
           thread:
-            timeoutInMilliseconds: 100000
+            timeoutInMilliseconds: 60000
     fallback:
       isolation:
         semaphore:
@@ -76,5 +76,5 @@ server:
     maxThreads: 100
   session:
     cookie: 
-      name: jianhuasc-session          
+      name: lvjianhua-session          
     
