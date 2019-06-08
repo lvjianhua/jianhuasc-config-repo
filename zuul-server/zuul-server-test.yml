@@ -20,7 +20,7 @@ server:
   port: 9000
   session: 
     cookie: 
-      name: jianhuasc-az
+      name: lvjianhua-az
       
 ribbon:
   ReadTimeout: 15000
@@ -60,6 +60,7 @@ security:
           -----END PUBLIC KEY-----
       id: openid
       serviceId: ${PREFIX:}resource
+
 logging:
   level.org.springframework.security: DEBUG
 turbine:
@@ -76,7 +77,8 @@ hystrix:
         rollingStats:
           timeInMilliseconds: 150000
         rollingPercentile:
-          numBuckets: 10     
+          numBuckets: 10      
+            
 zuulprop: 
   loginAccessUrl: 
   allowOrigin: localhost
