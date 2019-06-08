@@ -23,7 +23,7 @@ server:
   use-forward-headers: true
   session: 
     cookie: 
-      name: jianhuasc-au
+      name: lvjianhua-au
   
 security:
   basic:
