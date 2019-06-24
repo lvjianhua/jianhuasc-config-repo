@@ -40,7 +40,7 @@ zuul:
       stripPrefix: false
     user-center:       
       sensitiveHeaders:                               
-      path: /users/**
+      path: /api/user/**
       stripPrefix: false 
   add-proxy-headers: true
 
