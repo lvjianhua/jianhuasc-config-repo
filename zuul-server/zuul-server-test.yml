@@ -38,6 +38,10 @@ zuul:
       sensitiveHeaders:
       path: /uaa/**
       stripPrefix: false
+    user-center:       
+      sensitiveHeaders:                               
+      path: /users/**
+      stripPrefix: false 
   add-proxy-headers: true
 
 security:
